@@ -1,4 +1,5 @@
 # scrape_linkedin.py
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
@@ -14,10 +15,10 @@ import subprocess
 def get_chromium_version():
     try:
         version = subprocess.check_output(['chromium', '--version']).decode('utf-8')
-        # version string looks like 'Chromium 142.0.7444.134\n'
+        # version string like 'Chromium 142.0.7444.134\n'
         version_number = version.strip().split(' ')[1].split('.')[0]
         return version_number
-    except Exception as e:
+    except Exception:
         return None
 
 def scrape_linkedin(email, password, profile_url, max_scroll=5, headless=True):
@@ -31,12 +32,12 @@ def scrape_linkedin(email, password, profile_url, max_scroll=5, headless=True):
     options.add_argument("--disable-dev-shm-usage")
     options.add_argument("--window-size=1920,1080")
 
-    # Use Chromium if installed (required for Streamlit Cloud)
+    # Use Chromium if installed for Streamlit Cloud
     chromium_path = shutil.which("chromium") or shutil.which("chromium-browser")
     if chromium_path:
         options.binary_location = chromium_path
 
-    # Match the ChromeDriver version to the Chromium browser version
+    # Match ChromeDriver version to Chromium for Streamlit Cloud
     chromium_version = get_chromium_version()
     if chromium_version:
         service = Service(ChromeDriverManager(driver_version=chromium_version).install())
@@ -55,14 +56,19 @@ def scrape_linkedin(email, password, profile_url, max_scroll=5, headless=True):
         driver.find_element(By.XPATH, "//button[@type='submit']").click()
         time.sleep(5)
 
-        # --- Navigate to profile posts ---
+        # Debug: Save screen and HTML after login
+        driver.save_screenshot("data/login.png")
+        with open("data/login_page.html", "w", encoding="utf-8") as f:
+            f.write(driver.page_source)
+
+        # --- Go to profile posts ---
         if not profile_url.endswith("/"):
             profile_url += "/"
         posts_url = profile_url + "detail/recent-activity/shares/"
         driver.get(posts_url)
         time.sleep(5)
 
-        # --- Scroll to load more posts ---
+        # --- Scroll to load posts ---
         for _ in range(max_scroll):
             driver.execute_script("window.scrollBy(0, 2000);")
             time.sleep(2)
@@ -80,7 +86,7 @@ def scrape_linkedin(email, password, profile_url, max_scroll=5, headless=True):
 
                 try:
                     likes_elem = container.find_element(By.XPATH,
-                                                        ".//button[contains(@aria-label,'like') or contains(@aria-label,'Like')]")
+                        ".//button[contains(@aria-label,'like') or contains(@aria-label,'Like')]")
                     likes_text = likes_elem.get_attribute("aria-label")
                     likes = int(''.join(filter(str.isdigit, likes_text))) if any(
                         ch.isdigit() for ch in likes_text) else 0
@@ -89,7 +95,7 @@ def scrape_linkedin(email, password, profile_url, max_scroll=5, headless=True):
 
                 try:
                     comments_elem = container.find_element(By.XPATH,
-                                                           ".//button[contains(@aria-label,'comment') or contains(@aria-label,'Comment')]")
+                        ".//button[contains(@aria-label,'comment') or contains(@aria-label,'Comment')]")
                     comments_text = comments_elem.get_attribute("aria-label")
                     comments = int(''.join(filter(str.isdigit, comments_text))) if any(
                         ch.isdigit() for ch in comments_text) else 0
