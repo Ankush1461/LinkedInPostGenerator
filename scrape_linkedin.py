@@ -8,7 +8,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 import time
 import json
 import os
-
+import shutil
 
 def scrape_linkedin(email, password, profile_url, max_scroll=5, headless=True):
     os.makedirs("data", exist_ok=True)
@@ -20,6 +20,11 @@ def scrape_linkedin(email, password, profile_url, max_scroll=5, headless=True):
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
     options.add_argument("--window-size=1920,1080")
+
+    # Use Chromium if installed (required for Streamlit Cloud)
+    chromium_path = shutil.which("chromium") or shutil.which("chromium-browser")
+    if chromium_path:
+        options.binary_location = chromium_path
 
     service = Service(ChromeDriverManager().install())
     driver = webdriver.Chrome(service=service, options=options)
