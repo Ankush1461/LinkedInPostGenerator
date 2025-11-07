@@ -1,51 +1,107 @@
 [
     {
-        "text": "AI agent tools have exploded and most people are still guessing what to use when. So I started mapping out what each one is actually built for.\n\nIf you're building anything beyond a demo, the tool you choose matters early.\n\nHere’s a clear breakdown, depending on what you’re building.\n\n▪️ If you need to chain tools and memory across steps → LangChain\nStill the most flexible for logic-first workflows.\nBut the learning curve is real if you’re not used to designing agent state.\n\n▪️ If you’re building teams of agents that pass tasks → CrewAI\nRoles, memory and handoff logic baked in.\nIt works when you need structure, not just clever prompts.\n\n▪️ If your agent needs to ask, refine, repeat → AutoGen\nGreat for tasks that evolve through feedback.\nThe agent learns more by asking than assuming.\n\n▪️ If you want agents to behave like real dev teams → MetaGPT\nYou define a spec, and the PM, Dev, QA agents execute.\nUseful when you need product thinking, not just code output.\n\n▪️ If your task needs retries, state or conditional flows → LangGraph\nThis saved us time debugging long workflows.\nVisual graphs help you spot logic loops fast.\n\n▪️ If your agent is in production and failing silently → AgentOps\nDashboards, logs, alerts.\n\n▪️ If you’re prototyping fast with your own APIs → Superagent\nOpen-source, vector DB, memory-ready.\nEasy to fork and test something new in under an hour.\n\n▪️ If you’re doing RAG with large docs or search flows → Haystack Agents\nDev-centric, tuned for retrieval pipelines.\nIt’s modular, and it’s built to go deep into documents, not wide.\n\n- - - - - - - -\nIf you’ve built something with any of these tools, drop a link to your repo in the comments.\nI’d love to see how you approached it.\n- - - - - - - -\n\n⚡I’m. I build with AI and share how it’s done weekly.",
+        "text": "I'm incredibly grateful and honored to receive the \"Client Extraordinaire\" award from EY. \nThis recognition highlights the strong partnerships and trust we've built with our clients.\nHuge thanks to my amazing team for their support!! Special gratitude to,for always believing in me and all my mentors,,,whose guidance has been invaluable in helping me achieve this milestone. 😇\n\nAlso special thanks to my colleagues,,,,for working together to build customer confidence and deliver exceptional results.\n\nThis recognition wouldn't have been possible without your belief in me and our collective efforts.\n\nThank you once again to everyone who has been part of this journey. Let’s keep pushing boundaries and achieving excellence together! 💥",
         "engagement": {
             "likes": 0,
-            "comments": 49
+            "comments": 40
         }
     },
     {
-        "text": "🚀 Thrilled to share that I’ve successfully completed a power-packed workshop on Power BI conducted by Office Master!\nFrom building smart dashboards to leveraging AI-driven insights, the session was a deep dive into turning raw data into powerful business intelligence.\n\nGrateful for the hands-on learning experience and excited to apply these skills to real-world challenges!\n📈💡",
+        "text": "I’m happy to share that I’ve obtained a new certification: Microsoft Certified: Azure Data Fundamentals from Microsoft!",
         "engagement": {
             "likes": 0,
-            "comments": 13
+            "comments": 18
         }
     },
     {
-        "text": "𝐖𝐡𝐚𝐭 𝐫𝐞𝐚𝐥𝐥𝐲 𝐡𝐚𝐩𝐩𝐞𝐧𝐬 𝐰𝐡𝐞𝐧 𝐲𝐨𝐮 𝐡𝐢𝐭 𝐒𝐞𝐧𝐝 𝐨𝐧 𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩?\n\n\nIt feels instant—but behind the scenes, there's a beautifully orchestrated system at work.\n\nHere’s a breakdown of the WhatsApp Message Flow:\n\nYour message is encrypted instantly and sent to WhatsApp’s servers.\n\nThe server checks if the recipient is online or offline.\n\nIf online → message is delivered and synced across devices.\n\nIf offline → message is queued and delivered once they’re back online.\n\nRead receipts are sent back when the user reads your message.\n\nAnd yes — all this happens within seconds, securely and efficiently.\n\nI visualized the entire architecture in this diagram to simplify how it works.\nWhether you're into system design, distributed systems, or just curious about real-time messaging, this is a great example to learn from.\n\nWant me to break down more real-world systems like this?\n\n𝐃𝐨𝐧'𝐭 𝐟𝐨𝐫𝐠𝐞𝐭 𝐭𝐨 𝐣𝐨𝐢𝐧 𝐦𝐲 𝐲𝐨𝐮𝐭𝐮𝐛𝐞 𝐜𝐡𝐚𝐧𝐧𝐞𝐥",
+        "text": "Just earned my Microsoft Certified: Azure Data Fundamentals! Excited for what comes next.",
         "engagement": {
             "likes": 0,
-            "comments": 514
+            "comments": 4
         }
     },
     {
-        "text": "Thrilled to Announce My PMP® Certification Achievement!\n\nI am delighted to share that I have successfully passed the Project Management Professional (PMP®) Certification exam, achieving an Above Target score in all domains. This certification represents a significant milestone in my professional journey, reinforcing my expertise in project management methodologies, leadership, and strategic execution.\n\nThe PMP® exam is known for its rigor, testing not only theoretical knowledge but also the ability to apply project management principles in real-world scenarios. Achieving this success required dedicated learning, hands-on experience, and a commitment to mastering practical applications of project management concepts.\n\nI extend my gratitude to my mentors,,, colleagues, and peers who supported me throughout this journey. I look forward to leveraging this knowledge to drive successful projects, optimize processes, and contribute effectively to my organization's goals.",
+        "text": "I’m happy to share that I’ve obtained a new certification: EY Artificial Intelligence - Applied AI - Bronze Learning (2024) from EY!",
         "engagement": {
             "likes": 0,
-            "comments": 27
+            "comments": 8
         }
     },
     {
-        "text": "The Science Behind Employee Recognition:\n\nPracticing recognition in the workplace improves employees' mental well-being, and increases their motivation to contribute value to their organization.\n\nHuman Beings Need Recognition\n\n* Human beings feel the need to accomplish things, and be appreciated and recognized for those accomplishments. In addition to feeling accomplished, we need to know that our contributions to the world are valued. Without this recognition, we begin to feel our hard work has no purpose. And without purpose, we feel unappreciated, undervalued, and unmotivated.\n\n* When employees feel valued and appreciated for their hard work, they are more likely to remain engaged and motivated. Recognition can take many forms, from a simple thank-you note to a public ceremony.\n\nWhat Happens in Our Brains When We Feel Appreciated\n\n* Human beings are wired to crave connection, belonging, and acceptance. When we experience appreciation and gratitude, our brains release dopamine and serotonin. These are crucial neurotransmitters responsible for making us feel ‘good,' regulate our emotions, and respond to stress. Gratitude acts as a catalyst for these neurotransmitters, and actively experiencing gratitude and appreciation allows us to manage our stress levels better.\n\n* Recognition is a fundamental human need. When employees feel appreciated for their contributions, they are more likely to remain engaged and committed to their work. Recognition also helps to foster a positive work environment, where employees feel valued and respected.\n\n* Recognition is a powerful tool for creating a results-oriented culture. By recognizing and celebrating success, leaders can foster a positive work environment, retain top talent, and boost productivity.",
+        "text": "I am happy to share that I have successfully completed Bronze Learning badge in Applied AI.",
+        "engagement": {
+            "likes": 0,
+            "comments": 4
+        }
+    },
+    {
+        "text": "I’m happy to share that I’ve been promoted to Associate Consultant at EY!",
+        "engagement": {
+            "likes": 0,
+            "comments": 67
+        }
+    },
+    {
+        "text": "My journey at EY!!\n\nHearing about Anna’s sudden and tragic passing left me feeling deeply saddened. It’s heartbreaking to think of the immense grief and irreparable loss her family and friends must be experiencing. My deepest condolences to the family and friends.\n\nRecently, while reading various posts on LinkedIn about people's experiences at Big4 firms, I found myself reflecting on my own 8.5-year journey at EY—a path that, in many ways, feels unique.\n\nMy time at EY was filled with moments of gratitude, empathy, and respect, and it shaped me profoundly, both personally and professionally. After 8.5 years of navigating the inevitable ups and downs, I recently made the decision to resign, feeling it was the right time to explore a different career path. It wasn’t an easy decision, but it came after a period of immense learning, growth, and resilience.\n\nOne of the standout features of my time at EY was the emphasis on empathy, which I experienced firsthand from my leaders—partners, directors, senior managers, and managers alike. During difficult times, such as when I was unwell or when my parents underwent surgeries, I was never burdened by work demands. Instead, I was met with genuine concern for my well-being and given the space to focus on my family. This kind of support, which I believe is sometimes overlooked in broad-brush discussions about corporate culture, was a defining part of my experience. It’s something I’ve made a point to carry forward in my own approach to leadership.\n\nOf course, like many others, I had my share of long nights at work. I can still remember coming home at 4 a.m., but even during the busiest times, I always tried to listen to my body and maintain a balance. I learned to prioritize my health—through regular exercise and eating well—even when circumstances made it challenging.\n\nHere are a few key lessons I’ve taken away from my time at EY:\n1. Empathy is key: True leadership involves creating a culture of empathy, openness, and respect.\n\n2. Take time for yourself: Listen to your body and mind. Don’t hesitate to take a break when you need it, and don’t underestimate the value of rest.\n\n3. Prioritize your health: No matter how intense work gets, make time for physical activity. I committed to working out at least four times a week.\n\n4. Healthy choices are within reach: Even during late nights at the office, you can choose to nourish your body with healthy options. While you might not always control your hours, you can control how you fuel yourself.\n\n5. Avoid generalizations: Not all managers or teams at Big4 firms are the same. Each person comes with their own unique goals, perspectives, and leadership styles. It’s important to appreciate this diversity rather than generalizing the culture.\n\nSo, while I understand the experiences shared in many posts, I feel it's important to acknowledge that there are different stories—mine being one of them.",
+        "engagement": {
+            "likes": 0,
+            "comments": 5
+        }
+    },
+    {
+        "text": "Hello everyone,\n\nIntroducing MeteorDash, an engaging web-based game developed with Next.js. In this game, your hand movements control the action based on how you tilt your hand. The game pauses when hands are not detected and resumes when both hands are back in view.\n\nI'd love for you to try it out and welcome any suggestions for improvement in my project.\n\nCheck it out here:\nExplore the code here:\n\nNote:\n1. Provide camera access to play the game.\n2. Close the tab to completely end the game.",
+        "engagement": {
+            "likes": 0,
+            "comments": 4
+        }
+    },
+    {
+        "text": "Just earned my Microsoft Certified: Azure Fundamentals! Excited for what comes next.",
+        "engagement": {
+            "likes": 0,
+            "comments": 8
+        }
+    },
+    {
+        "text": "Balancing my professional responsibilities with my passion for website development. Always finding time to enhance my skills and work on exciting projects in free time.\n\nProject: A landing product page for iPhone 15 series made with the help of Vite-React and tech libraries like gsap and threejs.\n\nWebsite link:\n\nGithub link:",
+        "engagement": {
+            "likes": 0,
+            "comments": 10
+        }
+    },
+    {
+        "text": "EY has been ranked as one of the 25 workplaces in India to grow your career in the 2024 LinkedIn Top Companies List in \nhashtag\n#India. \n\nA big shoutout to our EY family who are the core of all that we do.\n\nThis is a true testament to our promise of offering exceptional experiences to our people.\n\nCheers to the builders of a better working world without whom this recognition wouldn't have been possible.\n\n||||",
+        "engagement": {
+            "likes": 0,
+            "comments": 43
+        }
+    },
+    {
+        "text": "View my verified achievement from EY.",
+        "engagement": {
+            "likes": 0,
+            "comments": 0
+        }
+    },
+    {
+        "text": "I’m happy to share that I’ve obtained a new certification: Microsoft Certified: Power Platform Fundamentals from Microsoft!",
         "engagement": {
             "likes": 0,
             "comments": 1
         }
     },
     {
-        "text": "I'm incredibly grateful and honored to receive the \"Client Extraordinaire\" award from EY. \nThis recognition highlights the strong partnerships and trust we've built with our clients.\nHuge thanks to my amazing team for their support!! Special gratitude to,for always believing in me and all my mentors,,,whose guidance has been invaluable in helping me achieve this milestone. 😇",
+        "text": "Meanwhile pending bills & EMIs: \"Excuse me, brother, brother idhar\"",
         "engagement": {
             "likes": 0,
-            "comments": 30
+            "comments": 0
         }
     },
     {
-        "text": "I am pleased to inform you that I have successfully obtained a new certification: Microsoft Certified: Dynamics 365 from Microsoft .",
+        "text": "Every skill, every tool, all at once 🧑🏻‍💻",
         "engagement": {
             "likes": 0,
-            "comments": 6
+            "comments": 1
         }
     }
 ]
