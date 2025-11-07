@@ -1,0 +1,91 @@
+[
+    {
+        "text": "AI agent tools have exploded and most people are still guessing what to use when. So I started mapping out what each one is actually built for.\n\nIf you're building anything beyond a demo, the tool you choose matters early.\n\nHere\u2019s a clear breakdown, depending on what you\u2019re building.\n\n\u25aa\ufe0f If you need to chain tools and memory across steps \u2192 LangChain\nStill the most flexible for logic-first workflows.\nBut the learning curve is real if you\u2019re not used to designing agent state.\n\n\u25aa\ufe0f If you\u2019re building teams of agents that pass tasks \u2192 CrewAI\nRoles, memory and handoff logic baked in.\nIt works when you need structure, not just clever prompts.\n\n\u25aa\ufe0f If your agent needs to ask, refine, repeat \u2192 AutoGen\nGreat for tasks that evolve through feedback.\nThe agent learns more by asking than assuming.\n\n\u25aa\ufe0f If you want agents to behave like real dev teams \u2192 MetaGPT\nYou define a spec, and the PM, Dev, QA agents execute.\nUseful when you need product thinking, not just code output.\n\n\u25aa\ufe0f If your task needs retries, state or conditional flows \u2192 LangGraph\nThis saved us time debugging long workflows.\nVisual graphs help you spot logic loops fast.\n\n\u25aa\ufe0f If your agent is in production and failing silently \u2192 AgentOps\nDashboards, logs, alerts.\n\n\u25aa\ufe0f If you\u2019re prototyping fast with your own APIs \u2192 Superagent\nOpen-source, vector DB, memory-ready.\nEasy to fork and test something new in under an hour.\n\n\u25aa\ufe0f If you\u2019re doing RAG with large docs or search flows \u2192 Haystack Agents\nDev-centric, tuned for retrieval pipelines.\nIt\u2019s modular, and it\u2019s built to go deep into documents, not wide.\n\n- - - - - - - -\nIf you\u2019ve built something with any of these tools, drop a link to your repo in the comments.\nI\u2019d love to see how you approached it.\n- - - - - - - -\n\n\u26a1I\u2019m. I build with AI and share how it\u2019s done weekly.",
+        "engagement": {
+            "likes": 0,
+            "comments": 49
+        },
+        "line_count": 21,
+        "language": "Hinglish",
+        "tags": [
+            "CrewAI",
+            "LangChain"
+        ]
+    },
+    {
+        "text": "\ud83d\ude80 Thrilled to share that I\u2019ve successfully completed a power-packed workshop on Power BI conducted by Office Master!\nFrom building smart dashboards to leveraging AI-driven insights, the session was a deep dive into turning raw data into powerful business intelligence.\n\nGrateful for the hands-on learning experience and excited to apply these skills to real-world challenges!\n\ud83d\udcc8\ud83d\udca1",
+        "engagement": {
+            "likes": 0,
+            "comments": 13
+        },
+        "line_count": 4,
+        "language": "Hinglish",
+        "tags": [
+            "Power BI",
+            "Machine Learning"
+        ]
+    },
+    {
+        "text": "\ud835\udc16\ud835\udc21\ud835\udc1a\ud835\udc2d \ud835\udc2b\ud835\udc1e\ud835\udc1a\ud835\udc25\ud835\udc25\ud835\udc32 \ud835\udc21\ud835\udc1a\ud835\udc29\ud835\udc29\ud835\udc1e\ud835\udc27\ud835\udc2c \ud835\udc30\ud835\udc21\ud835\udc1e\ud835\udc27 \ud835\udc32\ud835\udc28\ud835\udc2e \ud835\udc21\ud835\udc22\ud835\udc2d \ud835\udc12\ud835\udc1e\ud835\udc27\ud835\udc1d \ud835\udc28\ud835\udc27 \ud835\udc16\ud835\udc21\ud835\udc1a\ud835\udc2d\ud835\udc2c\ud835\udc00\ud835\udc29\ud835\udc29?\n\n\nIt feels instant\u2014but behind the scenes, there's a beautifully orchestrated system at work.\n\nHere\u2019s a breakdown of the WhatsApp Message Flow:\n\nYour message is encrypted instantly and sent to WhatsApp\u2019s servers.\n\nThe server checks if the recipient is online or offline.\n\nIf online \u2192 message is delivered and synced across devices.\n\nIf offline \u2192 message is queued and delivered once they\u2019re back online.\n\nRead receipts are sent back when the user reads your message.\n\nAnd yes \u2014 all this happens within seconds, securely and efficiently.\n\nI visualized the entire architecture in this diagram to simplify how it works.\nWhether you're into system design, distributed systems, or just curious about real-time messaging, this is a great example to learn from.\n\nWant me to break down more real-world systems like this?\n\n\ud835\udc03\ud835\udc28\ud835\udc27'\ud835\udc2d \ud835\udc1f\ud835\udc28\ud835\udc2b\ud835\udc20\ud835\udc1e\ud835\udc2d \ud835\udc2d\ud835\udc28 \ud835\udc23\ud835\udc28\ud835\udc22\ud835\udc27 \ud835\udc26\ud835\udc32 \ud835\udc32\ud835\udc28\ud835\udc2e\ud835\udc2d\ud835\udc2e\ud835\udc1b\ud835\udc1e \ud835\udc1c\ud835\udc21\ud835\udc1a\ud835\udc27\ud835\udc27\ud835\udc1e\ud835\udc25",
+        "engagement": {
+            "likes": 0,
+            "comments": 514
+        },
+        "line_count": 9,
+        "language": "Hinglish",
+        "tags": [
+            "System Design"
+        ]
+    },
+    {
+        "text": "Thrilled to Announce My PMP\u00ae Certification Achievement!\n\nI am delighted to share that I have successfully passed the Project Management Professional (PMP\u00ae) Certification exam, achieving an Above Target score in all domains. This certification represents a significant milestone in my professional journey, reinforcing my expertise in project management methodologies, leadership, and strategic execution.\n\nThe PMP\u00ae exam is known for its rigor, testing not only theoretical knowledge but also the ability to apply project management principles in real-world scenarios. Achieving this success required dedicated learning, hands-on experience, and a commitment to mastering practical applications of project management concepts.\n\nI extend my gratitude to my mentors,,, colleagues, and peers who supported me throughout this journey. I look forward to leveraging this knowledge to drive successful projects, optimize processes, and contribute effectively to my organization's goals.",
+        "engagement": {
+            "likes": 0,
+            "comments": 27
+        },
+        "line_count": 9,
+        "language": "Hinglish",
+        "tags": [
+            "PMP Certification"
+        ]
+    },
+    {
+        "text": "The Science Behind Employee Recognition:\n\nPracticing recognition in the workplace improves employees' mental well-being, and increases their motivation to contribute value to their organization.\n\nHuman Beings Need Recognition\n\n* Human beings feel the need to accomplish things, and be appreciated and recognized for those accomplishments. In addition to feeling accomplished, we need to know that our contributions to the world are valued. Without this recognition, we begin to feel our hard work has no purpose. And without purpose, we feel unappreciated, undervalued, and unmotivated.\n\n* When employees feel valued and appreciated for their hard work, they are more likely to remain engaged and motivated. Recognition can take many forms, from a simple thank-you note to a public ceremony.\n\nWhat Happens in Our Brains When We Feel Appreciated\n\n* Human beings are wired to crave connection, belonging, and acceptance. When we experience appreciation and gratitude, our brains release dopamine and serotonin. These are crucial neurotransmitters responsible for making us feel \u2018good,' regulate our emotions, and respond to stress. Gratitude acts as a catalyst for these neurotransmitters, and actively experiencing gratitude and appreciation allows us to manage our stress levels better.\n\n* Recognition is a fundamental human need. When employees feel appreciated for their contributions, they are more likely to remain engaged and committed to their work. Recognition also helps to foster a positive work environment, where employees feel valued and respected.\n\n* Recognition is a powerful tool for creating a results-oriented culture. By recognizing and celebrating success, leaders can foster a positive work environment, retain top talent, and boost productivity.",
+        "engagement": {
+            "likes": 0,
+            "comments": 1
+        },
+        "line_count": 17,
+        "language": "Hinglish",
+        "tags": [
+            "Employee Recognition",
+            "Motivation"
+        ]
+    },
+    {
+        "text": "I'm incredibly grateful and honored to receive the \"Client Extraordinaire\" award from EY. \nThis recognition highlights the strong partnerships and trust we've built with our clients.\nHuge thanks to my amazing team for their support!! Special gratitude to,for always believing in me and all my mentors,,,whose guidance has been invaluable in helping me achieve this milestone. \ud83d\ude07",
+        "engagement": {
+            "likes": 0,
+            "comments": 30
+        },
+        "line_count": 4,
+        "language": "Hinglish",
+        "tags": [
+            "Client Extraordinaire",
+            "EY"
+        ]
+    },
+    {
+        "text": "I am pleased to inform you that I have successfully obtained a new certification: Microsoft Certified: Dynamics 365 from Microsoft .",
+        "engagement": {
+            "likes": 0,
+            "comments": 6
+        },
+        "line_count": 3,
+        "language": "Hinglish",
+        "tags": [
+            "Microsoft Certified",
+            "Dynamics 365"
+        ]
+    }
+]
