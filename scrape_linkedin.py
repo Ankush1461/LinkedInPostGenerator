@@ -3,47 +3,25 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver.chrome.options import Options
+from webdriver_manager.chrome import ChromeDriverManager
 import time
 import json
 import os
-import shutil
-import platform
 
-def get_chrome_path():
-    """Detects installed Chrome executable on different OS."""
-    system = platform.system()
-    paths = []
-
-    if system == "Windows":
-        paths = [
-            os.path.join(os.environ.get("PROGRAMFILES", ""), "Google/Chrome/Application/chrome.exe"),
-            os.path.join(os.environ.get("PROGRAMFILES(X86)", ""), "Google/Chrome/Application/chrome.exe"),
-            os.path.join(os.environ.get("LOCALAPPDATA", ""), "Google/Chrome/Application/chrome.exe"),
-        ]
-    elif system == "Darwin":  # macOS
-        paths = ["/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"]
-    else:  # Linux
-        paths = [shutil.which("google-chrome"), shutil.which("chrome"), shutil.which("chromium")]
-
-    for path in paths:
-        if path and os.path.exists(path):
-            return path
-    raise FileNotFoundError("Google Chrome executable not found. Please install Chrome.")
 
 def scrape_linkedin(email, password, profile_url, max_scroll=5, headless=True):
     os.makedirs("data", exist_ok=True)
 
-    chrome_path = get_chrome_path()
-    options = webdriver.ChromeOptions()
-    options.binary_location = chrome_path
+    options = Options()
     if headless:
-        options.add_argument("--headless=new")
+        options.add_argument("--headless")
     options.add_argument("--disable-gpu")
     options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
     options.add_argument("--window-size=1920,1080")
 
-    # Use default ChromeDriver (ensure version matches your Chrome)
-    service = Service()  # empty Service() will use local chromedriver
+    service = Service(ChromeDriverManager().install())
     driver = webdriver.Chrome(service=service, options=options)
 
     try:
@@ -80,16 +58,20 @@ def scrape_linkedin(email, password, profile_url, max_scroll=5, headless=True):
                 container = post.find_element(By.XPATH, "./ancestor::div[contains(@class, 'occludable-update')]")
 
                 try:
-                    likes_elem = container.find_element(By.XPATH, ".//button[contains(@aria-label,'like') or contains(@aria-label,'Like')]")
+                    likes_elem = container.find_element(By.XPATH,
+                                                        ".//button[contains(@aria-label,'like') or contains(@aria-label,'Like')]")
                     likes_text = likes_elem.get_attribute("aria-label")
-                    likes = int(''.join(filter(str.isdigit, likes_text))) if any(ch.isdigit() for ch in likes_text) else 0
+                    likes = int(''.join(filter(str.isdigit, likes_text))) if any(
+                        ch.isdigit() for ch in likes_text) else 0
                 except NoSuchElementException:
                     likes = 0
 
                 try:
-                    comments_elem = container.find_element(By.XPATH, ".//button[contains(@aria-label,'comment') or contains(@aria-label,'Comment')]")
+                    comments_elem = container.find_element(By.XPATH,
+                                                           ".//button[contains(@aria-label,'comment') or contains(@aria-label,'Comment')]")
                     comments_text = comments_elem.get_attribute("aria-label")
-                    comments = int(''.join(filter(str.isdigit, comments_text))) if any(ch.isdigit() for ch in comments_text) else 0
+                    comments = int(''.join(filter(str.isdigit, comments_text))) if any(
+                        ch.isdigit() for ch in comments_text) else 0
                 except NoSuchElementException:
                     comments = 0
 
