@@ -9,6 +9,16 @@ import time
 import json
 import os
 import shutil
+import subprocess
+
+def get_chromium_version():
+    try:
+        version = subprocess.check_output(['chromium', '--version']).decode('utf-8')
+        # version string looks like 'Chromium 142.0.7444.134\n'
+        version_number = version.strip().split(' ')[1].split('.')[0]
+        return version_number
+    except Exception as e:
+        return None
 
 def scrape_linkedin(email, password, profile_url, max_scroll=5, headless=True):
     os.makedirs("data", exist_ok=True)
@@ -26,7 +36,13 @@ def scrape_linkedin(email, password, profile_url, max_scroll=5, headless=True):
     if chromium_path:
         options.binary_location = chromium_path
 
-    service = Service(ChromeDriverManager().install())
+    # Match the ChromeDriver version to the Chromium browser version
+    chromium_version = get_chromium_version()
+    if chromium_version:
+        service = Service(ChromeDriverManager(version=chromium_version).install())
+    else:
+        service = Service(ChromeDriverManager().install())
+
     driver = webdriver.Chrome(service=service, options=options)
 
     try:
