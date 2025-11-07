@@ -39,7 +39,7 @@ def scrape_linkedin(email, password, profile_url, max_scroll=5, headless=True):
     # Match the ChromeDriver version to the Chromium browser version
     chromium_version = get_chromium_version()
     if chromium_version:
-        service = Service(ChromeDriverManager(version=chromium_version).install())
+        service = Service(ChromeDriverManager(driver_version=chromium_version).install())
     else:
         service = Service(ChromeDriverManager().install())
 
